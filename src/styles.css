@@ -2,4 +2,33 @@
 
 * {
   border: solid 1px red;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel__track-container {
+  position: relative;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.carousel__button {
+  position: absolute;
+  z-index: 2;
+  top: 50%
 }
