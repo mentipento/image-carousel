@@ -16,13 +16,14 @@ ul {
   padding: 0;
 }
 
-.carousel__track-container {
+.carousel {
   position: relative;
+  width: 800px;
+  height: 533px;
 }
 
 .carousel__slide {
   position: absolute;
-  top: 50%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -30,5 +31,33 @@ ul {
 .carousel__button {
   position: absolute;
   z-index: 2;
-  top: 50%
+  top: 260px;
+  background-color: transparent;
 }
+
+.carousel__button > img {
+  width: 60px;
+}
+
+.carousel__button--left {
+  left: -60px;
+}
+
+.carousel__button--left:hover img {
+  content: url(img/menu-left-outline-hover.svg);
+}
+
+.carousel__button--right {
+  right: -60px;
+}
+
+.carousel__button--right:hover img {
+  content: url(img/menu-right-outline-hover.svg);
+}
+
+.carousel__indicator {
+  position: absolute;
+  z-index: 2;
+  bottom: -115px;
+}
+
