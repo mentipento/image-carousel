@@ -1,7 +1,7 @@
 /* styles.css */
 
 * {
-  border: solid 1px red;
+  /* border: solid 1px red; */
   box-sizing: border-box;
 }
 
@@ -28,11 +28,16 @@ ul {
   transform: translate(-50%);
 }
 
+.carousel__slide > img {
+  width: 800px;
+}
+
 .carousel__button {
   position: absolute;
   z-index: 2;
   top: 260px;
   background-color: transparent;
+  border: none;
 }
 
 .carousel__button > img {
@@ -58,6 +63,14 @@ ul {
 .carousel__indicator {
   position: absolute;
   z-index: 2;
-  bottom: -115px;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.carousel__indicator button {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
 }
 
